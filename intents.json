@@ -1,0 +1,1052 @@
+{
+    "intents": [
+        {
+            "tag": "m_I_a_new_laptop_my_business",
+            "patterns": [
+                "Im interested in purchasing a new laptop for my business.",
+                "Im interested in purchasing a new laptop for my business."
+            ],
+            "responses": [
+                "Great! Id be happy to assist you. May I ask what specific requirements you have for the laptop?",
+                "Thats great to hear! Id love to learn more about your specific needs. What are some of the key features youre looking for in a laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_a_bad_experience_a_previous_vendor_I_your_company",
+            "patterns": [
+                "Ive had a bad experience with a previous vendor. Can I trust your company?"
+            ],
+            "responses": [
+                "I completely understand your concern. Building trust is important to us, and we value our customers satisfaction. We have a proven track record of delivering high-quality products and excellent customer service."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_business_needs",
+            "patterns": [
+                "Hi, Im interested in purchasing a new laptop for my business needs."
+            ],
+            "responses": [
+                "Great! Id be happy to help you find the perfect laptop. Tell me more about your specific requirements and preferences."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_trouble_my_current_software_you_any_recommendations_a_more_efficient_solution",
+            "patterns": [
+                "Ive been having trouble with my current software. Do you have any recommendations for a more efficient solution?",
+                "Ive been having trouble with my current software. Do you have any recommendations for a more efficient solution?"
+            ],
+            "responses": [
+                "Certainly! Understanding your pain points is crucial. Could you please elaborate on the issues youre facing with your current software?",
+                "Of course! Id love to help. Could you tell me more about the issues youre facing so I can understand your needs better?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_graphic_design_work",
+            "patterns": [
+                "Hi, Im interested in purchasing a new laptop for my graphic design work.",
+                "Im interested in purchasing a new laptop for my graphic design work.",
+                "Im interested in purchasing a new laptop for my graphic design work.",
+                "Im interested in purchasing a new laptop for my graphic design work.",
+                "Im interested in purchasing a new laptop for my graphic design work.",
+                "Hello, Im interested in purchasing a new laptop for my graphic design work.",
+                "Hi, Im interested in purchasing a new laptop for my graphic design work."
+            ],
+            "responses": [
+                "Great! Id be happy to assist you. Can you tell me more about your specific requirements and preferences?",
+                "Thats great to hear! Can you tell me more about what specific requirements you have for your graphic design work?",
+                "Thats great to hear! Can you tell me more about your specific needs and requirements for the laptop?",
+                "Thats great to hear! Can you tell me more about your specific needs and requirements for the laptop?",
+                "Thats great to hear! Can you tell me more about what specific features and requirements you have for the laptop?",
+                "Thank you for reaching out! Id be happy to assist you. Could you please share more about your specific requirements and preferences for the laptop?",
+                "Great! Id be happy to assist you. Could you tell me more about your specific requirements and budget?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_laptop_a_high-performance_processor_a_dedicated_graphics_card",
+            "patterns": [
+                "Im looking for a laptop with a high-performance processor and a dedicated graphics card."
+            ],
+            "responses": [
+                "Understood. Those are important features for graphic design. May I ask what software you primarily use?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_business_you_me",
+            "patterns": [
+                "Hi, Im interested in purchasing a new laptop for my business. Can you help me find the right one?",
+                "Hi, Im interested in purchasing a new laptop for my business. Can you help me find the right one?",
+                "Im interested in purchasing a new laptop for my business. Can you help me find the right one?",
+                "Hi, Im interested in purchasing a new laptop for my business. Can you help me?",
+                "Im interested in purchasing a new laptop for my business. Can you help me find the right one?",
+                "Im interested in purchasing a new laptop for my business. Can you help me find the right one?",
+                "Im interested in purchasing a new laptop for my business. Can you help me find the right one?"
+            ],
+            "responses": [
+                "Of course! Id be happy to assist you. Tell me more about your specific needs and requirements.",
+                "Of course! Id be happy to assist you. May I ask what specific features and requirements you have in mind for your business needs?",
+                "Absolutely! Id be happy to assist you. Could you share some more details about your specific requirements and preferences?",
+                "Of course! Id be happy to assist you. What specific features are you looking for in a laptop?",
+                "Of course! Id be happy to assist you. Could you please provide some more information about your specific requirements and budget?",
+                "Of course! Id be happy to assist you. Can you tell me more about your specific needs and what youll be using the laptop for?",
+                "Of course! Id be happy to assist you. Can you tell me more about your specific requirements and preferences for the laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_great_camera_Which_one_you",
+            "patterns": [
+                "Im looking for a smartphone with a great camera. Which one would you recommend?"
+            ],
+            "responses": [
+                "I understand your preference for a good camera. Let me show you our latest models with advanced camera features."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_work_you_me",
+            "patterns": [
+                "Hi, Im interested in purchasing a new laptop for my work. Can you help me find the right one?",
+                "Hi, Im interested in purchasing a new laptop for my work. Can you help me find the right one?"
+            ],
+            "responses": [
+                "Of course! Id be happy to assist you. Can you tell me a bit more about your needs and preferences?",
+                "Of course! Id be happy to assist you. Could you please tell me more about your specific requirements and what youll be using the laptop for?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_some_issues_my_current_software_any_way_you_me_it",
+            "patterns": [
+                "Ive been having some issues with my current software. Is there any way you can help me troubleshoot it?"
+            ],
+            "responses": [
+                "Absolutely! I can certainly look into it and provide some guidance. Could you explain the specific issues youre facing?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_long_battery_life_you",
+            "patterns": [
+                "Im looking for a smartphone with a long battery life. Can you recommend one?"
+            ],
+            "responses": [
+                "Absolutely! Battery life is an important consideration. May I ask how often and for what purposes you typically use your smartphone throughout the day?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_that_me_any_issues",
+            "patterns": [
+                "Im looking for a new laptop that is reliable and wont give me any issues.",
+                "Im looking for a new laptop that is reliable and wont give me any issues.",
+                "Im looking for a new laptop that is reliable and wont give me any issues."
+            ],
+            "responses": [
+                "So, what I hear you saying is that youre looking for a laptop that you can rely on without any problems.",
+                "So, what I hear you saying is that you want a laptop that you can rely on without any problems. Is that correct?",
+                "So, what I hear you saying is that youre looking for a product that you can rely on without any issues."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_a_bad_experience_a_similar_product_I",
+            "patterns": [
+                "I had a bad experience with a similar product before, and Im hesitant to try again."
+            ],
+            "responses": [
+                "I understand how frustrating that must have been for you. We strive to provide our customers with a seamless experience, and I assure you that we have taken steps to ensure that our product exceeds your expectations."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_a_terrible_experience_a_similar_product_It",
+            "patterns": [
+                "I had a terrible experience with a similar product before. It was frustrating."
+            ],
+            "responses": [
+                "I understand how frustrating that must have been for you. We strive to provide our customers with a seamless experience, and I assure you that we have taken steps to ensure that our product exceeds your expectations."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_a_really_bad_experience_a_similar_product_the_past",
+            "patterns": [
+                "I had a really bad experience with a similar product in the past."
+            ],
+            "responses": [
+                "I understand how frustrating that must have been for you. We strive to provide our customers with a seamless experience, and I assure you that we have taken steps to ensure that our product exceeds your expectations."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_graphic_design_work_you",
+            "patterns": [
+                "Im interested in purchasing a new laptop for my graphic design work. Can you recommend a powerful one?",
+                "Im interested in purchasing a new laptop for my graphic design work. Can you recommend one?",
+                "Hi, Im interested in buying a new laptop for my graphic design work. Can you recommend one?"
+            ],
+            "responses": [
+                "Absolutely! We have a range of high-performance laptops specifically designed for graphic design. These laptops come with powerful processors, ample RAM, and dedicated graphics cards to handle all your design needs.",
+                "Of course! Can you tell me more about your specific needs and requirements for a laptop?",
+                "Of course! Id be happy to help. Can you tell me more about your specific needs and requirements?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_you_the_specifications_this_laptop_simple_terms",
+            "patterns": [
+                "Im not very tech-savvy. Can you explain the specifications of this laptop in simple terms?"
+            ],
+            "responses": [
+                "Of course! This laptop has a fast processor that allows you to run graphic design software smoothly. It also has plenty of memory to store your files and a graphics card that ensures accurate color representation in your designs."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_business_What_your_product_others_the_market",
+            "patterns": [
+                "Im interested in purchasing a new laptop for my business. What sets your product apart from others in the market?"
+            ],
+            "responses": [
+                "Our laptops are equipped with advanced technology that surpasses our competitors. They are designed for superior performance, durability, and efficiency."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_cost-effective_solution_my_companys_data_storage_needs_your_product_this_requirement",
+            "patterns": [
+                "Ive been looking for a cost-effective solution for my companys data storage needs. How can your product meet this requirement?"
+            ],
+            "responses": [
+                "Our data storage solution offers a cost-effective approach without compromising on quality. It provides ample storage capacity and efficient data management, ensuring optimal performance at an affordable price."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_my_graphic_design_work_you_me",
+            "patterns": [
+                "Hi, Im looking for a new laptop for my graphic design work. Can you help me?"
+            ],
+            "responses": [
+                "Of course! Id be happy to assist you. Can you tell me more about your specific needs and requirements for the laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_smartphone_a_good_camera_Which_one_you",
+            "patterns": [
+                "Im interested in a smartphone with a good camera. Which one would you recommend?"
+            ],
+            "responses": [
+                "Absolutely! I can help you with that. Could you please share with me what youre looking for in terms of camera features and any other preferences you have?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_graphic_design_work_you_a_model",
+            "patterns": [
+                "Hi, Im interested in purchasing a new laptop for my graphic design work. Can you recommend a model?",
+                "Im interested in buying a new laptop for my graphic design work. Can you recommend a model?"
+            ],
+            "responses": [
+                "Of course! Id love to help. Can you tell me more about your specific needs and requirements for the laptop?",
+                "Of course! Can you tell me more about your specific needs and requirements for a laptop? What software do you use and what are the main tasks you perform?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_long_battery_life_Any_suggestions",
+            "patterns": [
+                "Im looking for a smartphone with a long battery life. Any suggestions?"
+            ],
+            "responses": [
+                "Absolutely! Id be happy to assist you. Can you provide me with some more details about how you plan to use the smartphone and any specific features youre looking for?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_graphic_design_work_you_me",
+            "patterns": [
+                "Hi there! Im interested in purchasing a new laptop for my graphic design work. Can you help me find the right one?",
+                "Hi, Im interested in purchasing a new laptop for my graphic design work. Can you help me find the right one?",
+                "Hi, Im interested in purchasing a new laptop for my graphic design work. Can you help me?"
+            ],
+            "responses": [
+                "Of course! Id be happy to assist you. Can you tell me more about your specific needs and requirements for the laptop?",
+                "Of course! Id be happy to assist you. Tell me more about your specific needs and preferences so I can help you find the best solution.",
+                "Of course! Id be happy to assist you. Tell me more about what youre looking for in a laptop and your specific needs as a graphic designer."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "experience_I_frequent_crashes_my_current_software_you_any_recommendations_a_more_stable_solution",
+            "patterns": [
+                "Ive been experiencing frequent crashes with my current software. Do you have any recommendations for a more stable solution?"
+            ],
+            "responses": [
+                "Absolutely! I understand how frustrating that can be. Can you provide more details about the crashes and the software youre currently using?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_my_graphic_design_work_you_any_recommendations",
+            "patterns": [
+                "Im looking for a new laptop for my graphic design work. Do you have any recommendations?",
+                "Im looking for a new laptop for my graphic design work. Do you have any recommendations?"
+            ],
+            "responses": [
+                "Of course! Id be happy to help. Could you tell me more about your specific needs and requirements?",
+                "Absolutely! Id be happy to help. Could you tell me more about your specific needs and preferences?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_trouble_slow_internet_speeds_anything_you_it",
+            "patterns": [
+                "Ive been having trouble with slow internet speeds. Is there anything you can suggest to improve it?"
+            ],
+            "responses": [
+                "Absolutely. Lets discuss your current internet setup and any specific challenges youre facing. Together, we can find a solution that meets your needs."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_work_you_me",
+            "patterns": [
+                "Im interested in purchasing a new laptop for work. Can you help me find the right one?"
+            ],
+            "responses": [
+                "Absolutely! Id be happy to assist you. Could you tell me a bit more about your specific needs and requirements?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_great_camera_Any_recommendations",
+            "patterns": [
+                "Im looking for a smartphone with a great camera. Any recommendations?"
+            ],
+            "responses": [
+                "Of course! Id love to help you find the perfect smartphone. Could you share your preferences and what you value most in a camera?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_work_you_me",
+            "patterns": [
+                "Hi, Im looking for a new laptop for work. Can you help me?"
+            ],
+            "responses": [
+                "Of course! Id be happy to assist you. Could you tell me more about your specific needs and requirements?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_smartphone_What_options_you",
+            "patterns": [
+                "Im interested in purchasing a new smartphone. What options do you have available?"
+            ],
+            "responses": [
+                "Certainly! Before we dive into the options, could you let me know what features are important to you in a smartphone?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_good_camera_quality",
+            "patterns": [
+                "Im looking for a smartphone with a good camera quality."
+            ],
+            "responses": [
+                "I understand. Can you share more about what type of photography you enjoy and what specific camera features youre looking for?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_which_laptop_my_needs_you_me_some_recommendations",
+            "patterns": [
+                "Im not sure which laptop would be the best fit for my needs. Can you give me some recommendations?"
+            ],
+            "responses": [
+                "Absolutely! I can provide you with various options based on your requirements. What will you primarily be using the laptop for?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_graphic_design_work_you_any_models",
+            "patterns": [
+                "Hi, Im interested in purchasing a new laptop for my graphic design work. Can you recommend any models?",
+                "Im interested in purchasing a new laptop for my graphic design work. Can you recommend any models?",
+                "Im interested in purchasing a new laptop for my graphic design work. Can you recommend any models?",
+                "Hi, Im interested in purchasing a new laptop for my graphic design work. Can you recommend any models?"
+            ],
+            "responses": [
+                "Of course! Id be happy to assist you. Could you please share more details about your requirements and budget?",
+                "Of course! Id be happy to assist you. Can you please share specific requirements or preferences you have for the laptop?",
+                "Of course! Id be happy to help you. Tell me more about your specific needs and requirements for the laptop.",
+                "Of course! Id be happy to help you. Could you tell me more about your specific requirements and budget?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_the_durability_the_product_these_laptops",
+            "patterns": [
+                "Im concerned about the durability of the product. How long do these laptops typically last?"
+            ],
+            "responses": [
+                "Thats a great question. Our laptops are built with high-quality materials and undergo rigorous testing to ensure durability. On average, they can last for several years with proper care and maintenance."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_software_that_me_my_expenses_you_any_suggestions",
+            "patterns": [
+                "Im looking for a software that can help me track and manage my expenses. Do you have any suggestions?"
+            ],
+            "responses": [
+                "Absolutely! Could you provide me with more details about the specific features youre looking for in an expense management software?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_business_you_any_models",
+            "patterns": [
+                "Im interested in purchasing a new laptop for my business. Can you recommend any models?"
+            ],
+            "responses": [
+                "Of course! Id be happy to help. Can you tell me more about your specific needs and requirements?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_some_technical_issues_my_current_software_you_any_suggestions_alternative_options",
+            "patterns": [
+                "I have been having some technical issues with my current software. Do you have any suggestions for alternative options?"
+            ],
+            "responses": [
+                "Absolutely. It would be helpful if you could provide more details about the issues youre facing. That way, I can recommend the most suitable software for your needs."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_business_you_me_some_recommendations",
+            "patterns": [
+                "Im interested in purchasing a new laptop for my business. Can you provide me with some recommendations?"
+            ],
+            "responses": [
+                "Of course! Id be happy to help. Could you please let me know your specific requirements and preferences?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_good_camera_What_options_you",
+            "patterns": [
+                "Im looking for a smartphone with a good camera. What options do you have?",
+                "Im looking for a smartphone with a good camera. What options do you have?"
+            ],
+            "responses": [
+                "Great! Our latest models have exceptional camera capabilities. Could you tell me more about your photography needs and budget?",
+                "Great! Before we proceed, may I ask what type of photography you enjoy? That will help me suggest the most suitable smartphone for you."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_graphic_design_business",
+            "patterns": [
+                "Im interested in purchasing a new laptop for my graphic design business."
+            ],
+            "responses": [
+                "Great! Can you tell me more about your needs and preferences for the laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_good_camera_long_battery_life",
+            "patterns": [
+                "Im looking for a smartphone with a good camera and long battery life."
+            ],
+            "responses": [
+                "Sure! Could you provide me with more details about your camera requirements and any specific battery life expectations?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_a_fast_processor_a_long_battery_life",
+            "patterns": [
+                "Im looking for a new laptop with a fast processor and a long battery life."
+            ],
+            "responses": [
+                "I understand that youre in need of a laptop with a powerful processor and extended battery life. Can you tell me more about your specific requirements and the tasks youll be performing?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_the_durability_this_smartphone_you_me_its_build_quality",
+            "patterns": [
+                "Im concerned about the durability of this smartphone. Can you tell me more about its build quality?"
+            ],
+            "responses": [
+                "I hear your concern about the durability of the smartphone. The build quality is excellent, as it is made with high-quality materials that can withstand everyday use. Would you like to know more about its specific features?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_gaming_you_me",
+            "patterns": [
+                "Im interested in purchasing a new laptop for gaming. Can you help me find the best one?"
+            ],
+            "responses": [
+                "Of course! Id be happy to assist you. Could you tell me more about your specific requirements and budget for the laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_great_camera_What_options_you",
+            "patterns": [
+                "Im looking for a smartphone with a great camera. What options do you have?"
+            ],
+            "responses": [
+                "Certainly! Before we explore the available options, could you let me know your preferred budget range and any specific features you prioritize in a smartphone?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_graphic_design_work",
+            "patterns": [
+                "Im looking for a new laptop for graphic design work."
+            ],
+            "responses": [
+                "Thats great to hear! Can you tell me more about the specific features you need for your graphic design work?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_the_battery_life_the_smartphone",
+            "patterns": [
+                "Im concerned about the battery life of the smartphone."
+            ],
+            "responses": [
+                "I understand your concern. Could you please share more details about your usage patterns and requirements so that I can recommend a smartphone with a suitable battery life?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_high_processing_power_a_long_battery_life",
+            "patterns": [
+                "Im looking for a new laptop with high processing power and a long battery life."
+            ],
+            "responses": [
+                "Understood, so you need a laptop that can handle intensive tasks and has a long-lasting battery. Can you tell me more about what youll be using it for?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_my_phone_I_which_model",
+            "patterns": [
+                "Im interested in upgrading my phone, but Im not sure which model to choose."
+            ],
+            "responses": [
+                "Id be happy to help you with that. Can you tell me what features are important to you in a new phone?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_gaming",
+            "patterns": [
+                "Im interested in purchasing a new laptop for gaming."
+            ],
+            "responses": [
+                "Thats great! Tell me more about your gaming preferences and what youre looking for in a laptop."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "need_I_a_software_solution_my_teams_management_process",
+            "patterns": [
+                "I need a software solution to streamline my teams project management process."
+            ],
+            "responses": [
+                "Im here to help! Please share more details about your current project management challenges and what features youre looking for in a software solution."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_graphic_design_work",
+            "patterns": [
+                "Im interested in purchasing a new laptop for graphic design work."
+            ],
+            "responses": [
+                "Thats great to hear! Id be happy to assist you in finding the perfect laptop for your needs. Can you tell me more about your specific requirements?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "experience_I_slow_loading_times_my_current_website_you_any_suggestions_its_performance",
+            "patterns": [
+                "Ive been experiencing slow loading times on my current website. Do you have any suggestions on how to improve its performance?"
+            ],
+            "responses": [
+                "Thank you for bringing that up. I can definitely help you with that. Before we proceed, could you provide me with more details about your website and the issues youve been facing?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "experience_I_slow_performance_my_current_computer_I_something",
+            "patterns": [
+                "Ive been experiencing slow performance on my current computer. I need something faster and more efficient."
+            ],
+            "responses": [
+                "I understand your frustration. Its important to have a fast and efficient computer for your business needs. Can you tell me more about the tasks you regularly perform that require high performance?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_long_battery_life_a_high-quality_camera",
+            "patterns": [
+                "Im looking for a smartphone with a long battery life and a high-quality camera."
+            ],
+            "responses": [
+                "I understand. Could you elaborate on the specific features you prioritize in a smartphone?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_gaming_purposes",
+            "patterns": [
+                "Im interested in purchasing a new laptop for gaming purposes."
+            ],
+            "responses": [
+                "Thats great! Id love to help you find the perfect gaming laptop. Can you tell me more about your specific needs and preferences?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_long_battery_life_a_great_camera",
+            "patterns": [
+                "Im looking for a smartphone with a long battery life and a great camera."
+            ],
+            "responses": [
+                "Certainly! Lets dive deeper into your requirements. Can you provide some more details about the features and specifications you are looking for?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_long_battery_life_a_good_camera",
+            "patterns": [
+                "Im looking for a smartphone with a long battery life and a good camera.",
+                "Im looking for a smartphone with a long battery life and a good camera."
+            ],
+            "responses": [
+                "I understand. Could you elaborate on your preferred battery life and what type of photography youll be doing?",
+                "I understand. Its important to have a phone that can meet your battery and photography needs. Can you tell me more about how you plan to use the phone?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_a_long_battery_life",
+            "patterns": [
+                "Im looking for a new laptop with a long battery life."
+            ],
+            "responses": [
+                "Thank you for sharing your requirement. Can you tell me more about what you will be using the laptop for?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "experience_I_slow_internet_speeds_my_current_provider",
+            "patterns": [
+                "I have been experiencing slow internet speeds with my current provider."
+            ],
+            "responses": [
+                "I understand how frustrating that can be. Could you provide me with more details about your current internet plan and the specific issues you are facing?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_gaming_you",
+            "patterns": [
+                "Im interested in purchasing a new laptop for gaming. Can you recommend one?"
+            ],
+            "responses": [
+                "Of course! Id be happy to help. Can you tell me more about your requirements and budget for the laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_some_issues_my_current_smartphone_you_any_suggestions_it",
+            "patterns": [
+                "Ive been having some issues with my current smartphone. Do you have any suggestions on how to fix it?"
+            ],
+            "responses": [
+                "Im sorry to hear that. To better assist you, could you please describe the issues youre facing with your smartphone?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_long_battery_life_a_good_camera_What_options_you",
+            "patterns": [
+                "Im looking for a smartphone with a long battery life and a good camera. What options do you have?"
+            ],
+            "responses": [
+                "Certainly! Battery life and camera quality are important factors. May I ask if you have a preferred operating system or any specific budget constraints?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_that_graphic_design_software_you_any_recommendations",
+            "patterns": [
+                "Im looking for a new laptop that can handle graphic design software. Do you have any recommendations?"
+            ],
+            "responses": [
+                "Yes, we have several laptops that are specifically designed for graphic design. Can you tell me more about your specific needs and budget?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_the_durability_this_smartphone_it_a_strong_build",
+            "patterns": [
+                "Im concerned about the durability of this smartphone. Does it have a strong build?"
+            ],
+            "responses": [
+                "Absolutely! This smartphone is built with high-quality materials and is known for its durability. Would you like to see a demonstration?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_new_laptop_gaming_purposes",
+            "patterns": [
+                "Im looking for a new laptop for gaming purposes."
+            ],
+            "responses": [
+                "Tell me more about the specific features or requirements you have in mind for your gaming laptop."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_the_battery_life_the_smartphones_you",
+            "patterns": [
+                "Im concerned about the battery life of the smartphones you offer."
+            ],
+            "responses": [
+                "I understand your concern about battery life. We have a range of smartphones with different battery capacities. Could you tell me how long you typically use your phone throughout the day?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_graphic_design_work_you_any_options",
+            "patterns": [
+                "Im interested in purchasing a new laptop for graphic design work. Can you recommend any options?"
+            ],
+            "responses": [
+                "Of course! Id be happy to help. Can you tell me more about your specific needs and requirements for the laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_laptop_a_high-resolution_display_powerful_graphics_capabilities",
+            "patterns": [
+                "Im looking for a laptop with a high-resolution display and powerful graphics capabilities."
+            ],
+            "responses": [
+                "I understand. Its important to have a laptop that can handle graphic design tasks efficiently. Are there any specific software or applications you will be using?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_the_price_the_software_you_any_way_a_discount",
+            "patterns": [
+                "Im concerned about the price of the software youre offering. Is there any way to get a discount?"
+            ],
+            "responses": [
+                "I understand your concern. Let me see what options are available for you. Could you share more details about your budget and the specific features youre looking for?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_trouble_the_technical_specifications_this_software_you_it_me_simpler_terms",
+            "patterns": [
+                "Im having trouble understanding the technical specifications of this software. Can you explain it to me in simpler terms?"
+            ],
+            "responses": [
+                "Absolutely! Let me break it down for you in a way that is easy to understand."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_programming_needs",
+            "patterns": [
+                "Hi, Im interested in purchasing a new laptop for my programming needs."
+            ],
+            "responses": [
+                "Great! Id be happy to assist you. Could you please share your specific requirements and preferences?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_laptop_a_fast_processor_ample_RAM_It_a_backlit_keyboard",
+            "patterns": [
+                "Im looking for a laptop with a fast processor and ample RAM. It should also have a backlit keyboard."
+            ],
+            "responses": [
+                "I understand your needs. A laptop with a powerful processor and sufficient RAM would ensure smooth performance for programming tasks. Additionally, a backlit keyboard would provide convenience in low-light environments."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "attend_I_a_conference_I_a_reliable_projector_my_presentation",
+            "patterns": [
+                "Im attending a conference next month and I need a reliable projector for my presentation."
+            ],
+            "responses": [
+                "Of course! I can recommend a few options based on your needs. Could you let me know the size of the room and any specific features youre looking for?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_good_camera_Any_recommendations",
+            "patterns": [
+                "Im looking for a smartphone with a good camera. Any recommendations?"
+            ],
+            "responses": [
+                "Certainly! Are you looking for a specific brand or operating system? And do you have any particular budget in mind?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_some_bad_experiences_previous_tech_purchases_I_I_the_right_choice",
+            "patterns": [
+                "Ive had some bad experiences with previous tech purchases. I want to make sure Im making the right choice this time."
+            ],
+            "responses": [
+                "I understand your concern. Its important to us that you have a positive experience. Lets discuss your requirements in detail to ensure we find the perfect fit for you."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "need_I_a_laptop_that_a_long_battery_life_I_it_a_fast_processor",
+            "patterns": [
+                "I need a laptop that is lightweight and has a long battery life. I also want it to have a fast processor for multitasking."
+            ],
+            "responses": [
+                "I understand. Those are important factors to consider. Lets explore some options that meet your requirements."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "want_I_a_phone_a_large_storage_capacity_a_fast_processor",
+            "patterns": [
+                "I also want a phone with a large storage capacity and a fast processor."
+            ],
+            "responses": [
+                "Got it. Let me show you some models that have excellent cameras, ample storage, and powerful processors."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "meet_I_my_current_software_Its_my_needs",
+            "patterns": [
+                "Im really frustrated with my current software. Its not meeting my needs at all."
+            ],
+            "responses": [
+                "I understand how frustrating that can be. Can you tell me more about the challenges youre facing with your current software?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_programming_you_me",
+            "patterns": [
+                "Hi, Im interested in purchasing a new laptop for programming. Can you help me find the best one?"
+            ],
+            "responses": [
+                "Of course! Im genuinely interested in understanding your needs. Could you tell me more about your programming requirements?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_trouble_my_current_software_Its_my_needs_something_you",
+            "patterns": [
+                "Ive been having trouble with my current software. Its not meeting my needs. Is there something you can recommend?"
+            ],
+            "responses": [
+                "Im actively listening to your concerns. Could you explain in more detail what specific features youre looking for in a software solution?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "experience_I_some_issues_my_current_software_Its_causing_delays_my_work_you_any_recommendations",
+            "patterns": [
+                "Ive been experiencing some issues with my current software. Its causing delays in my work. Do you have any recommendations?"
+            ],
+            "responses": [
+                "I understand how frustrating that can be. Could you please provide more details about the issues youre facing? This will help me recommend the best solution for you."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "experience_I_slow_internet_speeds_my_office_Any_suggestions_it",
+            "patterns": [
+                "Im experiencing slow internet speeds at my office. Any suggestions on how to improve it?"
+            ],
+            "responses": [
+                "Certainly! Before I can suggest a solution, may I ask about the size of your office and the number of employees using the internet? This will help me understand the scale of the issue and recommend appropriate measures."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "experience_I_slow_internet_speeds_my_office_What_solutions_you_the_connectivity",
+            "patterns": [
+                "Ive been experiencing slow internet speeds in my office. What solutions do you have to improve the connectivity?"
+            ],
+            "responses": [
+                "I understand your frustration. To better assist you, could you provide me with details about your current internet setup and the areas where youre experiencing the most issues?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "need_I_a_smartphone_a_long_battery_life_Which_one_you",
+            "patterns": [
+                "I need a smartphone with a long battery life. Which one would you recommend?"
+            ],
+            "responses": [
+                "Great! To better understand your needs, could you please share how you use your smartphone throughout the day and what features are important to you?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_software_solution_that_our_inventory_management_process_What_options_you",
+            "patterns": [
+                "Im looking for a software solution that can streamline our inventory management process. What options do you have?"
+            ],
+            "responses": [
+                "Great! To better understand your needs, could you please explain your current inventory management process and the challenges youre facing?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_design_work_you_me",
+            "patterns": [
+                "Hi, Im interested in purchasing a new laptop for my design work. Can you help me?"
+            ],
+            "responses": [
+                "Of course! Id be happy to assist you. Could you tell me more about your specific design needs and requirements?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_software_solution_that_our_project_management_processes_What_options_you",
+            "patterns": [
+                "Im looking for a software solution that can streamline our project management processes. What options do you have?"
+            ],
+            "responses": [
+                "Great! To better understand your project management challenges, could you provide some details about your current processes and pain points?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_business_What_options_you",
+            "patterns": [
+                "Im interested in purchasing a new laptop for my business. What options do you have?"
+            ],
+            "responses": [
+                "Thats great to hear! Can you tell me more about your specific needs and requirements for a laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_trouble_my_current_software_you_me_a_better_solution",
+            "patterns": [
+                "Ive been having trouble with my current software. Can you help me find a better solution?",
+                "Im having trouble with my current software. Can you help me find a better solution?"
+            ],
+            "responses": [
+                "Of course! Could you provide more details about the issues youre experiencing and what youre looking for in a new software?",
+                "Of course! Can you provide me with some details about the issues youre facing and what youre looking for in a software solution?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_business_you_me_the_options",
+            "patterns": [
+                "Im interested in purchasing a new laptop for my business. Can you tell me more about the options available?"
+            ],
+            "responses": [
+                "Of course! Id be happy to help. What specific requirements do you have for your business laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_software_solution_that_our_project_management_process_What_you",
+            "patterns": [
+                "Im looking for a software solution that can streamline our project management process. What do you recommend?"
+            ],
+            "responses": [
+                "Great! To better understand your needs, could you please share more details about your current project management challenges?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "look_I_a_smartphone_a_good_camera_you_me",
+            "patterns": [
+                "Im looking for a smartphone with a good camera. Can you help me choose one?"
+            ],
+            "responses": [
+                "Absolutely! Could you please share some more details about your photography needs? Are you looking for specific features or any particular budget constraints?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_a_new_laptop_my_design_work_you_any_recommendations",
+            "patterns": [
+                "Im interested in purchasing a new laptop for my design work. Do you have any recommendations?"
+            ],
+            "responses": [
+                "Absolutely! Could you tell me more about your specific design work and the requirements you have for a laptop?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_trouble_which_laptop_you_me",
+            "patterns": [
+                "Im having trouble deciding which laptop to purchase. Can you help me?"
+            ],
+            "responses": [
+                "Of course! Id be happy to assist you. Can you tell me more about your specific needs and requirements?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "m_I_I_this_product_It",
+            "patterns": [
+                "Im not sure if I can afford this product. It seems expensive."
+            ],
+            "responses": [
+                "I understand your concern. Lets explore different financing options that might make it more affordable for you."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "have_I_a_lot_trouble_my_current_computer_software",
+            "patterns": [
+                "Im having a lot of trouble with my current computer software."
+            ],
+            "responses": [
+                "If I understand correctly, you mentioned that you are facing challenges with your current softwares compatibility. Is that correct?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "work_its_other_programs_I",
+            "patterns": [
+                "Yes, its not working well with other programs I use."
+            ],
+            "responses": [
+                "I see. Can you describe the challenges you currently face with your software and how it impacts your daily operations?"
+            ],
+            "context_set": ""
+        }
+    ]
+}
