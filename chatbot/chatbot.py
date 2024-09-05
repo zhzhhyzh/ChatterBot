@@ -1,3 +1,4 @@
+# https://chatbotsmagazine.com/contextual-chat-bots-with-tensorflow-4391749d0077
 import nltk, os
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
@@ -13,7 +14,7 @@ import tensorflow as tf
 import random
 import json
 import pickle
-
+import uuid
 try: 
     with open("intents.json") as file:
         data = json.load(file)
@@ -45,8 +46,10 @@ except:
     intents = []
 
     for idx, row in df.iterrows():
+        currentContext = str(uuid.uuid4()) # fix conversation flow, 1 row = 1 conversation
+
         if row[str("0")] and is_computer_related(row[str("0")]):
-            for i in (0, len(df.columns)-1, 2):
+            for i in range(0, len(df.columns)-1, 2):
                 if row[str(i)] :
                     verbs, noun_phrases = extract_keywords(row[str(i)].replace("Customer: ",""))
                     # Combine verbs and noun phrases to form a simple intent
@@ -63,11 +66,19 @@ except:
                         if currentIntent["tag"]== intent:
                             currentIntent["patterns"].append(row[str(i)].replace("Customer: ",""))
                             currentIntent["responses"].append(row[str(i+1)].replace("Salesman: ",""))
+                            if i == 0: 
+                                currentIntent["context_set"].append(currentContext)
+                            else:
+                                currentIntent["context_filter"].append(currentContext)
+
                             isExist = True
                             break
                     if not isExist:
-                        intents.append({"tag":intent, "patterns":[row[str(i)].replace("Customer: ","")],"responses":[row[str(i+1)].replace("Salesman: ","")],"context_set":""})
-                  
+                        if i == 0: 
+                            intents.append({"tag":intent, "patterns":[row[str(i)].replace("Customer: ","")],"responses":[row[str(i+1)].replace("Salesman: ","")],"context_set":[currentContext]})
+                        else:
+                            intents.append({"tag":intent, "patterns":[row[str(i)].replace("Customer: ","")],"responses":[row[str(i+1)].replace("Salesman: ","")],"context_filter":[currentContext]})
+
     intents = { "intents": intents}                    
     # Optionally, save the intents to a JSON file
     import json
@@ -177,19 +188,40 @@ def bag_of_words(s, words):
 
 #         else:
 #             print("Bot: I didnt get that. Can you explain or try again.")
-def generate_response(user_input):
-    
+def generate_response(user_input, context):
         result = model.predict([bag_of_words(user_input, words)])[0]
         result_index = np.argmax(result)
         tag = labels[result_index]
         if result[result_index] > 0.7:
+            responseFound = False
             for tg in data["intents"]:
-                if tg['tag'] == tag:
-                    responses = tg['responses']
-            return random.choice(responses)
+                # if "context_filter" in tg:
+                #     print(context)
+                #     print(context in tg['context_filter'])
+                # print(context)
+                # print(tag)
+                if tg['tag'] == tag and (context=="" or(  "context_filter" in tg  and context in tg['context_filter'])):
 
+                    index = -1
+                    responses = tg['responses']
+                    # print(responses)
+                    if context =="":
+                        index = random.randrange(0, len(responses))
+                        if 'context_set' in tg:
+                            context = tg['context_set'][index]
+                    else:
+                        index = tg['context_filter'].index(context)
+                    
+
+                    responseFound = True
+                
+            if responseFound:
+                return  {"res":responses[index], "context":context}
+            else:
+                return  {"res":"I didnt get that. Can you explain or try again.","context":context}
         else:
-            return "I didnt get that. Can you explain or try again."
+            return  {"res":"I didnt get that. Can you explain or try again.","context":context}
+            
             
 
 

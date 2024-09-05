@@ -10,5 +10,6 @@ from django.http import HttpResponse
 
 def get_response(request):
     user_input = request.GET.get('msg')
-    response = generate_response(user_input)
+    context = request.GET.get('context')
+    response = generate_response(user_input, context)
     return HttpResponse(str(response))

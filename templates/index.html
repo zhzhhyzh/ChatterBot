@@ -215,6 +215,7 @@
     <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
     <script>
 
+        var context = ""
         const msgerForm = get(".msger-inputarea");
         const msgerInput = get(".msger-input");
         const msgerChat = get(".msger-chat");
@@ -261,10 +262,11 @@
         function botResponse(rawText) {
 
             // Bot Response
-            $.get("/chatbot/get", { msg: rawText }).done(function (data) {
-                console.log(rawText);
-                console.log(data);
-                const msgText = data;
+            $.get("/get", { msg: rawText, context }).done(function (data) {
+                // console.log(rawText);
+                // console.log(data);
+                const msgText = data.res;
+                context = data.context
                 appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
 
             });
