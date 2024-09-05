@@ -216,11 +216,11 @@ def generate_response(user_input, context):
                     responseFound = True
                 
             if responseFound:
-                return  {"res":responses[index], "context":context}
+                return  json.dumps({"res":responses[index], "context":context})
             else:
-                return  {"res":"I didnt get that. Can you explain or try again.","context":context}
+                return  json.dumps({"res":"I didnt get that. Can you explain or try again.","context":context})
         else:
-            return  {"res":"I didnt get that. Can you explain or try again.","context":context}
+            return  json.dumps({"res":"I didnt get that. Can you explain or try again.","context":context})
             
             
 

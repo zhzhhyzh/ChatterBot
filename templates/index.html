@@ -265,8 +265,8 @@
             $.get("/get", { msg: rawText, context }).done(function (data) {
                 // console.log(rawText);
                 // console.log(data);
-                const msgText = data.res;
-                context = data.context
+                const msgText = JSON.parse(data).res;
+                context = JSON.parse(data).context
                 appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
 
             });
