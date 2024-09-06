@@ -205,7 +205,7 @@ def generate_response(user_input, context):
                     index = -1
                     responses = tg['responses']
                     # print(responses)
-                    if context =="":
+                    if "context_set" in tg:
                         index = random.randrange(0, len(responses))
                         if 'context_set' in tg:
                             context = tg['context_set'][index]
