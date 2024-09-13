@@ -15,79 +15,80 @@ import random
 import json
 import pickle
 import uuid
-try: 
-    with open("intents.json") as file:
-        data = json.load(file)
-except:
+# try: 
+#     with open("intents.json") as file:
+#         data = json.load(file)
+# except:
     
-    df = pd.read_parquet("hf://datasets/goendalf666/sales-conversations/data/train-00000-of-00001-facf96cb8c12ba2c.parquet")
+#     df = pd.read_parquet("hf://datasets/goendalf666/sales-conversations/data/train-00000-of-00001-facf96cb8c12ba2c.parquet")
         
-    def is_computer_related(sentence):
-        keywords = ["computer", "laptop", "desktop", "CPU", "RAM", "monitor", 
-                    "mouse", "keyboard", "graphics card", "GPU", "SSD", "hard drive"]
+#     def is_computer_related(sentence):
+#         keywords = ["computer", "laptop", "desktop", "CPU", "RAM", "monitor", 
+#                     "mouse", "keyboard", "graphics card", "GPU", "SSD", "hard drive"]
         
-        sentence_lower = sentence.lower()
+#         sentence_lower = sentence.lower()
         
-        for keyword in keywords:
-            if keyword.lower() in sentence_lower.split(" "):
-                # print (keyword.lower())
-                return True
-        return False
+#         for keyword in keywords:
+#             if keyword.lower() in sentence_lower.split(" "):
+#                 # print (keyword.lower())
+#                 return True
+#         return False
 
-    # Function to extract verbs and noun phrases from a sentence
-    def extract_keywords(text):
-        doc = nlp(text)
-        verbs = [token.lemma_ for token in doc if token.pos_ == "VERB"]
-        noun_phrases = [chunk.text for chunk in doc.noun_chunks]
-        return verbs, noun_phrases
+#     # Function to extract verbs and noun phrases from a sentence
+#     def extract_keywords(text):
+#         doc = nlp(text)
+#         verbs = [token.lemma_ for token in doc if token.pos_ == "VERB"]
+#         noun_phrases = [chunk.text for chunk in doc.noun_chunks]
+#         return verbs, noun_phrases
 
        
 
-    intents = []
+#     intents = []
 
-    for idx, row in df.iterrows():
-        currentContext = str(uuid.uuid4()) # fix conversation flow, 1 row = 1 conversation
+#     for idx, row in df.iterrows():
+#         currentContext = str(uuid.uuid4()) # fix conversation flow, 1 row = 1 conversation
 
-        if row[str("0")] and is_computer_related(row[str("0")]):
-            for i in range(0, len(df.columns)-1, 2):
-                if row[str(i)] :
-                    verbs, noun_phrases = extract_keywords(row[str(i)].replace("Customer: ",""))
-                    # Combine verbs and noun phrases to form a simple intent
-                    if verbs and noun_phrases:
-                        intent = f"{verbs[0]}_{'_'.join(noun_phrases).replace(' ', '_')}"
-                    elif verbs:
-                        intent = f"{verbs[0]}"
-                    elif noun_phrases:
-                        intent = f"{'_'.join(noun_phrases).replace(' ', '_')}"
-                    else:
-                        intent = "unknown_intent"
-                    isExist = False
-                    for currentIntent in intents:
-                        if currentIntent["tag"]== intent:
-                            currentIntent["patterns"].append(row[str(i)].replace("Customer: ",""))
-                            currentIntent["responses"].append(row[str(i+1)].replace("Salesman: ",""))
-                            if i == 0: 
-                                currentIntent["context_set"].append(currentContext)
-                            else:
-                                currentIntent["context_filter"].append(currentContext)
+#         if row[str("0")] and is_computer_related(row[str("0")]):
+#             for i in range(0, len(df.columns)-1, 2):
+#                 if row[str(i)] :
+#                     verbs, noun_phrases = extract_keywords(row[str(i)].replace("Customer: ",""))
+#                     # Combine verbs and noun phrases to form a simple intent
+#                     if verbs and noun_phrases:
+#                         intent = f"{verbs[0]}_{'_'.join(noun_phrases).replace(' ', '_')}"
+#                     elif verbs:
+#                         intent = f"{verbs[0]}"
+#                     elif noun_phrases:
+#                         intent = f"{'_'.join(noun_phrases).replace(' ', '_')}"
+#                     else:
+#                         intent = "unknown_intent"
+#                     isExist = False
+#                     for currentIntent in intents:
+#                         if currentIntent["tag"]== intent:
+#                             currentIntent["patterns"].append(row[str(i)].replace("Customer: ",""))
+#                             currentIntent["responses"].append(row[str(i+1)].replace("Salesman: ",""))
+#                             if i == 0: 
+#                                 currentIntent["context_set"].append(currentContext)
+#                             else:
+#                                 currentIntent["context_filter"].append(currentContext)
 
-                            isExist = True
-                            break
-                    if not isExist:
-                        if i == 0: 
-                            intents.append({"tag":intent, "patterns":[row[str(i)].replace("Customer: ","")],"responses":[row[str(i+1)].replace("Salesman: ","")],"context_set":[currentContext]})
-                        else:
-                            intents.append({"tag":intent, "patterns":[row[str(i)].replace("Customer: ","")],"responses":[row[str(i+1)].replace("Salesman: ","")],"context_filter":[currentContext]})
+#                             isExist = True
+#                             break
+#                     if not isExist:
+#                         if i == 0: 
+#                             intents.append({"tag":intent, "patterns":[row[str(i)].replace("Customer: ","")],"responses":[row[str(i+1)].replace("Salesman: ","")],"context_set":[currentContext]})
+#                         else:
+#                             intents.append({"tag":intent, "patterns":[row[str(i)].replace("Customer: ","")],"responses":[row[str(i+1)].replace("Salesman: ","")],"context_filter":[currentContext]})
 
-    intents = { "intents": intents}                    
-    # Optionally, save the intents to a JSON file
-    import json
-    with open('intents.json', 'w') as f:
-        json.dump(intents, f, indent=4)
-    with open("intents.json") as file:
+#     intents = { "intents": intents}                    
+#     # Optionally, save the intents to a JSON file
+#     import json
+#     with open('intents.json', 'w') as f:
+#         json.dump(intents, f, indent=4)
+#     with open("intents.json") as file:
+#         data = json.load(file)
+
+with open("intents.json") as file:
         data = json.load(file)
-
-
 try:
     with open("data.pickle","rb") as f:
         words, labels, training, output = pickle.load(f)
@@ -188,6 +189,13 @@ def bag_of_words(s, words):
 
 #         else:
 #             print("Bot: I didnt get that. Can you explain or try again.")
+
+def get_choices(context=""):
+    choices = []
+    for intent in data["intents"]:
+        choices.append(intent['patterns'][0])
+    return choices
+
 def generate_response(user_input, context):
         result = model.predict([bag_of_words(user_input, words)])[0]
         result_index = np.argmax(result)
@@ -209,6 +217,8 @@ def generate_response(user_input, context):
                         index = random.randrange(0, len(responses))
                         if 'context_set' in tg:
                             context = tg['context_set'][index]
+                            # if context == "end":
+                            #     context = "" 
                     else:
                         index = tg['context_filter'].index(context)
                     
@@ -221,7 +231,47 @@ def generate_response(user_input, context):
                 return  json.dumps({"res":"I didnt get that. Can you explain or try again.","context":context})
         else:
             return  json.dumps({"res":"I didnt get that. Can you explain or try again.","context":context})
-            
-            
+
+from sklearn.neighbors import NearestNeighbors
+  
+import csv
+
+def csv_to_dict(file_path: str) -> list:
+    # Open the CSV file and read its contents
+    with open(file_path, mode='r') as csv_file:
+        # Use DictReader to read the CSV into a list of dictionaries
+        csv_reader = csv.DictReader(csv_file)
+        data = [row for row in csv_reader]
+    
+    return data
+def recommend( ram, storage, max_price):
+    # Sample data of computers with their specs
+    computers = csv_to_dict("Cleaned_Laptop_data.csv")
+
+    # Encoding specifications as numerical values
+    processor_map = {'Intel i5': 1, 'Intel i7': 2, 'Intel i9': 3, 'AMD Ryzen 5': 1.5}
+    # gpu_map = {'Intel UHD': 1, 'NVIDIA GTX 1650': 2, 'AMD Radeon Vega 8': 1.5, 'NVIDIA RTX 3070': 3}
+
+    # Prepare the training data (features)
+    X = np.array([
+        [ int(comp['ram_gb']), int(comp['ssd'])+int(comp['hdd']), int(comp['latest_price'])]
+        for comp in computers
+    ])
+
+    # Initialize NearestNeighbors model
+    model = NearestNeighbors(n_neighbors=2, metric='euclidean')
+    model.fit(X)
+
+    user_input = np.array([ [int(ram), int(storage), int(max_price)]])
+    
+    # Find the nearest neighbors (closest matching computers)
+    distances, indices = model.kneighbors(user_input)
+    
+    # Collect recommendations based on nearest neighbors
+    recommendations = [computers[idx] for idx in indices[0]]
+    if recommendations:
+        return recommendations
+    else:
+        return("No computers found matching your specifications.")
 
 
