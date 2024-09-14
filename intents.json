@@ -2,208 +2,166 @@
     "intents": [
       {
         "tag": "recommend",
-        "patterns": ["Recommend me a computer"],
-        "responses": [
+        "patterns": "Recommend me a computer",
+        "responses": 
           "Please type your specification in following format:<br>RAM:<br>Storage:<br>Max Price:<br>"
-        ],
-        "context_set": ["recommend","end"]
+        ,
+        "context_set": "recommend",
+        "context_filter":""
       },
-      {
-        "tag": "operating_system_available",
-        "patterns": ["What operating systems are available for your computers?"],
-        "responses": [
-          "We offer computers with various operating systems, including Windows, macOS, and Linux. If you have a specific preference, please let us know!",
-          "Our computers come with a choice of operating systems such as Windows, macOS, and Linux. You can select the one that best fits your needs during the purchasing process."
-        ],
-        "context_set": ["end","end"]
+    {
+        "tag:":"accessories",
+        "patterns:"Can you help me with accessories? ",
+          "responses": 
+          "Absolutely! I’d be delighted to assist you with finding the right computer accessories. We have a wide range of options. To make sure I recommend the best products for you, could you let me know which type of accessory you’re interested in?"
+        ,
+        "context_set": "explain_accessories",
+        "context_filter":""
       },
-      {
-        "tag": "customize_spec",
-        "patterns": [
-          "Can I customize the specifications of the computers you offer?"
-        ],
-        "responses": [
-          "Yes, you can customize the specifications of our computers to match your needs. Choose from different options for processors, memory, storage, and more.",
-          "Absolutely! We offer a range of customization options for our computers, allowing you to select the specifications that best suit your requirements."
-        ],
-        "context_set": ["end","end"]
+ {
+        "tag:":"keyboard",
+        "patterns:"Keyboard.",
+          "responses": 
+          "Sure! We have several types of keyboards!"
+        ,
+        "context_set": "choose_keyboards",
+        "context_filter":"explain_keyboards"
       },
-      {
-        "tag": "computer_shop_open",
-        "patterns": ["When does the computer shop open?"],
-        "responses": [
-          "Our store is open Monday through Friday, from 9 AM to 6 PM. On Saturdays, we open from 10 AM to 4 PM.",
-          "We’re open Monday to Friday, from 9 AM to 6 PM, and on Saturdays from 10 AM to 4 PM. Feel free to visit us during these hours!"
-        ],
-        "context_set": ["end","end"]
+        
+ {
+        "tag:":"mechanical_keyboard",
+        "patterns:"Mechanical keyboard.",
+          "responses": 
+          "These are known for their durability and tactile feedback. They come with different types of switches, like Cherry MX or Razer switches, each providing a unique typing experience."
+        ,
+        "context_set": "choose_keyboards",
+        "context_filter":"choose_keyboards"
       },
-      {
-        "tag": "compatible_peripherals",
-        "patterns": [
-          "How do I know if a computer is compatible with my existing peripherals?"
-        ],
-        "responses": [
-          "You can check compatibility by reviewing the computer's specifications and ensuring it has the necessary ports and connections for your peripherals. If you’re unsure, our support team can help!",
-          "To ensure compatibility, compare your peripheral requirements with the computer’s available ports and specifications. If you need assistance, just let us know!"
-        ],
-        "context_set": ["end","end"]
+ {
+        "tag:":"membrane_keyboard",
+        "patterns:"Membrane keyboard.",
+          "responses": 
+          "hese are generally quieter and more affordable. They’re a good choice for everyday use. "
+        ,
+        "context_set": "choose_keyboards",
+        "context_filter":"choose_keyboards"
       },
-      {
-        "tag": "data_transfer",
-        "patterns": [
-          "Do you offer any services for data transfer from an old computer?"
-        ],
-        "responses": [
-          "Yes, we offer data transfer services to help you move files from your old computer to your new one. Contact us for more details and to schedule an appointment.",
-          "We provide data transfer services to assist with migrating your files from an old computer. Get in touch with us for more information and to arrange a transfer."
-        ],
-        "context_set": ["end","end"]
+ {
+        "tag:":"ergonomic_keyboard",
+        "patterns:"Ergonomic keyboard.",
+          "responses": 
+          "Designed to reduce strain on your wrists and improve comfort, these keyboards often come with split designs or adjustable angles. "
+        ,
+        "context_set": "choose_keyboards",
+        "context_filter":"choose_keyboards"
       },
-      {
-        "tag": "pre_installed_software",
-        "patterns": [
-          "Are your computers pre-installed with software or do I need to buy it separately?"
-        ],
-        "responses": [
-          "Our computers come with essential software pre-installed, such as operating systems and basic utilities. Additional software can be purchased separately if needed.",
-          "Basic software is pre-installed on our computers, including the operating system. For additional software or applications, you may need to buy them separately."
-        ],
-        "context_set": ["end","end"]
+        
+ {
+        "tag:":"gaming_keyboard",
+        "patterns:"Gaming keyboard.",
+          "responses": 
+          "Equipped with features like programmable keys, backlighting, and customizable macros, these are perfect for gamers. "
+        ,
+        "context_set": "choose_keyboards",
+        "context_filter":"choose_keyboards"
       },
-      {
-        "tag": "energy_efficiency",
-        "patterns": ["What are the energy efficiency ratings of your computers?"],
-        "responses": [
-          "Our computers have energy efficiency ratings that comply with industry standards. You can find specific ratings and details on the product pages or by contacting our support team.",
-          "We ensure our computers meet high energy efficiency standards. Check the product specifications for detailed ratings or reach out to us for more information."
-        ],
-        "context_set": ["end","end"]
+ {
+        "tag:":"gaming_keyboard",
+        "patterns:"Gaming keyboard.",
+          "responses": 
+          "Equipped with features like programmable keys, backlighting, and customizable macros, these are perfect for gamers. "
+        ,
+        "context_set": "choose_keyboards",
+        "context_filter":"choose_keyboards"
       },
-      {
-        "tag": "order_processing_shipping",
-        "patterns": [
-          "How long does it typically take to process and ship an order?"
-        ],
-        "responses": [
-          "Orders are typically processed and shipped within 2-3 business days. You’ll receive a tracking number once your order is on its way.",
-          "Processing and shipping usually take 2-3 business days. After your order is shipped, you’ll get a tracking number to monitor its progress."
-        ],
-        "context_set": ["end","end"]
+        {
+        "tag:":"good",
+        "patterns:"I'm good!",
+          "responses": 
+          "Great to hear that!"
+        ,
+        "context_set": "end",
+        "context_filter":"choose_keyboards"
       },
-      {
-        "tag": "on_site_installation",
-        "patterns": ["Do you offer on-site installation or setup services?"],
-        "responses": [
-          "Yes, we offer on-site installation and setup services for your convenience. Please contact us to arrange a service appointment.",
-          "We provide on-site installation and setup services. Contact our team to schedule a visit and ensure your new computer is up and running smoothly."
-        ],
-        "context_set": ["end","end"]
+        {
+        "tag:":"mouse",
+        "patterns:"Mouse.",
+          "responses": 
+          "Wired or wireless?"
+        ,
+        "context_set": "choose_mouse",
+        "context_filter":"explain_accessories"
       },
-      {
-        "tag": "track_order_status",
-        "patterns": ["Can I track the status of my order after purchase?"],
-        "responses": [
-          "Yes, you can track your order status online using the tracking number provided once your order is shipped. Check our website for real-time updates.",
-          "Absolutely! After your purchase, you’ll receive a tracking number that allows you to monitor the status of your order through our website."
-        ],
-        "context_set": ["end","end"]
+        {
+        "tag:":"mouse",
+        "patterns:"Mouse.",
+          "responses": 
+          "Wired or wireless?"
+        ,
+        "context_set": "explain_accessories",
+        "context_filter":"choose_mouse"
       },
-      {
-        "tag": "best_computers_for_gaming",
-        "patterns": ["What are the best computers for gaming?"],
-        "responses": [
-          "To recommend the best gaming computers, could you specify your preferences for RAM, storage, and any particular games or performance levels you are aiming for?",
-          "For gaming, we need to know your desired specifications like RAM size, storage capacity, and whether you have any specific games or features in mind. This will help us suggest the best options for you."
-        ],
-        "context_set": ["end","end"]
+        {
+        "tag:":"wired mouse",
+        "patterns:"Wired Mouse.",
+          "responses": 
+          "A wired mouse is a pointing device that communicates with a computer through a direct connection using a cable. This cable is usually connected to a USB port or, less commonly, a PS/2 port on the computer."
+        ,
+        "context_set": "choose_mouse",
+        "context_filter":"choose_mouse"
       },
-      {
-        "tag": "laptops_vs_desktops",
-        "patterns": ["What are the differences between laptops and desktops?"],
-        "responses": [
-          "Are you looking for differences in terms of performance, storage, or portability? Let me know what factors are most important to you, like RAM or storage capacity.",
-          "To provide a clear comparison, could you specify what aspects are most important to you, such as RAM, storage, or overall performance? This will help tailor the differences to your needs."
-        ],
-        "context_set": ["end","end"]
+        {
+        "tag:":"wireless mouse",
+        "patterns:"Wireless Mouse.",
+          "responses": 
+          "A wireless mouse operates by transmitting signals to a computer through radio frequency (RF) or Bluetooth technology. This eliminates the need for a physical connection, providing greater freedom of movement and reducing cable clutter on the desk."
+        ,
+        "context_set": "choose_mouse",
+        "context_filter":"choose_mouse"
       },
-      {
-        "tag": "specifications_for_video_editing",
-        "patterns": [
-          "What specifications should I look for in a computer for video editing?"
-        ],
-        "responses": [
-          "For video editing, could you specify your needs in terms of RAM, storage space, and any particular software you plan to use? This will help us recommend the most suitable specs.",
-          "Can you provide details on the amount of RAM and storage you’re looking for, as well as the types of video projects you work on? This will assist in finding the best computer for your editing needs."
-        ],
-        "context_set": ["end","end"]
+           {
+        "tag:":"good",
+        "patterns:"I'm good!",
+          "responses": 
+          "Great to hear that!"
+        ,
+        "context_set": "end",
+        "context_filter":"choose_mouse"
       },
-      {
-        "tag": "financing_payment_plans",
-        "patterns": ["Do you offer financing or payment plans?"],
-        "responses": [
-          "We do offer financing options. Could you let us know the amount you're looking to finance and the type of computer you’re interested in? This will help us provide more specific details.",
-          "Yes, we offer payment plans. To assist you better, could you specify the total amount you're considering and the type of computer you’re interested in? This will help us find the best financing option for you."
-        ],
-        "context_set": ["end","end"]
+         {
+        "tag:":"monitor",
+        "patterns:"Monitor.",
+          "responses": 
+          "We sell flat-paneled monitors and curved monitors."
+        ,
+        "context_set": "choose_monitor",
+        "context_filter":"explain_accessories"
       },
-      {
-        "tag": "choosing_computer_for_general_use",
-        "patterns": [
-          "Can you help me choose a computer for general use or home office work?"
-        ],
-        "responses": [
-          "To help you choose the right computer, could you tell us your preferred RAM and storage options, as well as any specific tasks you plan to use it for?",
-          "For general use or home office work, it would be helpful to know your requirements for RAM, storage, and any specific applications you need to run. This will guide us in recommending the best options."
-        ],
-        "context_set": ["end","end"]
+         {
+        "tag:":"flat-paneled monitors",
+        "patterns:"Flat-paneled monitors.",
+          "responses": 
+          "Flat-panel monitors are a type of computer display that features a slim, flat profile, in contrast to older CRT (cathode ray tube) monitors, which were bulkier and curved. Flat-panel monitors have become the standard due to their sleek design, energy efficiency, and improved image quality. Here’s a comprehensive overview of flat-panel monitors, including their types, features, advantages, and disadvantages:"
+        ,
+        "context_set": "choose_monitor",
+        "context_filter":"choose_monitor"
       },
-      {
-        "tag": "warranty_coverage",
-        "patterns": ["What is the warranty coverage for your computers?"],
-        "responses": [
-          "Our warranty coverage varies by product. Could you let us know the specific computer model or type you're interested in? This will help provide accurate warranty details.",
-          "Warranty coverage can differ based on the computer model. Please specify the type of computer you’re considering so we can provide detailed warranty information."
-        ],
-        "context_set": ["end","end"]
+         {
+        "tag:":"curved monitors",
+        "patterns:"Curved monitors.",
+          "responses": 
+          "Designed to enhance immersion and reduce distortion by curving the screen to match the natural curve of the human eye. Often used in gaming and professional settings." ,
+        "context_set": "choose_monitor",
+        "context_filter":"choose_monitor"
       },
-      {
-        "tag": "promotions_discounts",
-        "patterns": ["Are there any ongoing promotions or discounts?"],
-        "responses": [
-          "We may have promotions or discounts available. Could you specify the type of computer you’re interested in or the range you’re looking at? This will help us check current offers.",
-          "To provide information on ongoing promotions, please let us know the type of computer or the price range you’re considering. We can then check for any applicable discounts."
-        ],
-        "context_set": ["end","end"]
+         {
+        "tag:":"thanks",
+        "patterns:"Thanks",
+          "responses": 
+          "No Problem",
+             "context_set": "end",
+        "context_filter":"choose_monitor"
       },
-      {
-        "tag": "upgrade_components",
-        "patterns": ["Can I upgrade the components of the computer later?"],
-        "responses": [
-          "Yes, many of our computers allow for component upgrades. Could you specify which components you're considering upgrading, such as RAM or storage, so we can provide detailed information?",
-          "Component upgrades are often possible. To give you the best advice, please let us know which parts you’re thinking about upgrading, like RAM or storage."
-        ],
-        "context_set": ["end","end"]
-      },
-      {
-        "tag": "return_policy",
-        "patterns": [
-          "What is the return policy if I’m not satisfied with my purchase?"
-        ],
-        "responses": [
-          "Our return policy varies by product. Could you specify the type of computer or the purchase details so we can provide accurate information on the return process?",
-          "Return policies can differ based on the product. Please provide details about the computer you purchased or are considering purchasing, so we can explain the return policy in detail."
-        ],
-        "context_set": ["end","end"]
-      },
-      {
-        "tag": "technical_support_after_purchase",
-        "patterns": ["Do you provide technical support after purchase?"],
-        "responses": [
-          "Yes, we offer technical support after purchase. Could you let us know the type of computer you bought or are interested in so we can provide specific support details?",
-          "We do provide post-purchase technical support. Please specify the computer model or type you have or are considering, and we’ll give you the relevant support information."
-        ],
-        "context_set": ["end","end"]
-      }
     ]
   }
   
