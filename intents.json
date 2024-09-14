@@ -162,6 +162,83 @@
              "context_set": "end",
         "context_filter":"choose_monitor"
       },
+         {
+      "tag": "laptop_brands",
+      "patterns": "Tell me about laptop brands",
+      "responses": "We have a variety of well-known laptop brands. Are you looking for information on specific brands like Dell, HP, Lenovo, or Apple, or would you like a general overview of the top brands?",
+      "context_set": "laptop_brands",
+      "context_filter": ""
+    },
+    {
+      "tag": "dell_laptops",
+      "patterns": "Dell laptops",
+      "responses": "Dell offers a range of laptops suitable for various needs, including their XPS series for high-end performance and the Inspiron series for more affordable options. Let me know if you need specific details or recommendations within Dell's lineup.",
+      "context_set": "laptop_brands",
+      "context_filter": "dell_laptops"
+    },
+    {
+      "tag": "hp_laptops",
+      "patterns": "HP laptops",
+      "responses": "HP provides a variety of laptops including the Spectre series for premium features and the Pavilion series for budget-friendly options. If you have any specific requirements, I can help you find the best HP laptop for your needs.",
+      "context_set": "laptop_brands",
+      "context_filter": "hp_laptops"
+    },
+    {
+      "tag": "lenovo_laptops",
+      "patterns": "Lenovo laptops",
+      "responses": "Lenovo is known for its reliable laptops like the ThinkPad series for business professionals and the Legion series for gaming. If you have specific preferences or needs, I can provide tailored recommendations within Lenovo's offerings.",
+      "context_set": "laptop_brands",
+      "context_filter": "lenovo_laptops"
+    },
+    {
+      "tag": "apple_laptops",
+      "patterns": "Apple laptops",
+      "responses": "Apple laptops, including the MacBook Air and MacBook Pro, are known for their sleek design and powerful performance. If you're interested in an Apple laptop, I can help you understand the differences between the models and find the right one for you.",
+      "context_set": "laptop_brands",
+      "context_filter": "apple_laptops"
+    },
+    {
+      "tag": "laptop_features",
+      "patterns": "What features should I look for in a laptop?",
+      "responses": "When choosing a laptop, consider features such as screen size, battery life, processor type, RAM, storage, and additional functionalities like touchscreen or backlit keyboards. Let me know if you need details on any specific feature.",
+      "context_set": "laptop_features",
+      "context_filter": ""
+    },
+    {
+      "tag": "battery_life",
+      "patterns": "How important is battery life?",
+      "responses": "Battery life is crucial if you need to use your laptop on the go. Longer battery life means less frequent charging and more productivity away from a power source. Consider laptops with high-capacity batteries if this is important to you.",
+      "context_set": "laptop_features",
+      "context_filter": "battery_life"
+    },
+    {
+      "tag": "screen_size",
+      "patterns": "What screen size should I choose?",
+      "responses": "Screen size affects portability and viewing comfort. Smaller screens (13-14 inches) are more portable, while larger screens (15-17 inches) provide a better viewing experience. Choose based on your usage preferences and mobility needs.",
+      "context_set": "laptop_features",
+      "context_filter": "screen_size"
+    },
+    {
+      "tag": "processor_type",
+      "patterns": "What kind of processor should I choose?",
+      "responses": "The processor type determines the laptop's performance. Intel Core i5 or AMD Ryzen 5 processors are good for general use, while Core i7 or Ryzen 7 are better for intensive tasks like gaming or video editing. Let me know your needs for a more specific recommendation.",
+      "context_set": "laptop_features",
+      "context_filter": "processor_type"
+    },
+    {
+      "tag": "ram_storage",
+      "patterns": "How much RAM and storage do I need?",
+      "responses": "For general use, 8GB of RAM and 256GB of storage are usually sufficient. For more demanding tasks, consider 16GB of RAM and 512GB or more of storage. Let me know if you have specific requirements for RAM or storage.",
+      "context_set": "laptop_features",
+      "context_filter": "ram_storage"
+    },
+    {
+      "tag": "good",
+      "patterns": "I'm good",
+      "responses": "Great to hear that! If you have any more questions or need further assistance, feel free to ask.",
+      "context_set": "end",
+      "context_filter": ""
+    }
     ]
   }
   
