@@ -11,7 +11,7 @@
       },
     {
         "tag:":"accessories",
-        "patterns:"Can you help me with accessories? ",
+        "patterns":"Can you help me with accessories? ",
           "responses": 
           "Absolutely! I’d be delighted to assist you with finding the right computer accessories. We have a wide range of options. To make sure I recommend the best products for you, could you let me know which type of accessory you’re interested in?"
         ,
@@ -20,7 +20,7 @@
       },
  {
         "tag:":"keyboard",
-        "patterns:"Keyboard.",
+        "patterns":"Keyboard.",
           "responses": 
           "Sure! We have several types of keyboards!"
         ,
@@ -30,7 +30,7 @@
         
  {
         "tag:":"mechanical_keyboard",
-        "patterns:"Mechanical keyboard.",
+         "patterns":"Mechanical keyboard.",
           "responses": 
           "These are known for their durability and tactile feedback. They come with different types of switches, like Cherry MX or Razer switches, each providing a unique typing experience."
         ,
@@ -39,7 +39,7 @@
       },
  {
         "tag:":"membrane_keyboard",
-        "patterns:"Membrane keyboard.",
+          "patterns":"Membrane keyboard.",
           "responses": 
           "hese are generally quieter and more affordable. They’re a good choice for everyday use. "
         ,
@@ -48,7 +48,7 @@
       },
  {
         "tag:":"ergonomic_keyboard",
-        "patterns:"Ergonomic keyboard.",
+          "patterns":"Ergonomic keyboard.",
           "responses": 
           "Designed to reduce strain on your wrists and improve comfort, these keyboards often come with split designs or adjustable angles. "
         ,
@@ -58,7 +58,7 @@
         
  {
         "tag:":"gaming_keyboard",
-        "patterns:"Gaming keyboard.",
+        "patterns":"Gaming keyboard.",
           "responses": 
           "Equipped with features like programmable keys, backlighting, and customizable macros, these are perfect for gamers. "
         ,
@@ -67,7 +67,7 @@
       },
  {
         "tag:":"gaming_keyboard",
-        "patterns:"Gaming keyboard.",
+        "patterns":"Gaming keyboard.",
           "responses": 
           "Equipped with features like programmable keys, backlighting, and customizable macros, these are perfect for gamers. "
         ,
@@ -76,7 +76,7 @@
       },
         {
         "tag:":"good",
-        "patterns:"I'm good!",
+        "patterns":"I'm good!",
           "responses": 
           "Great to hear that!"
         ,
@@ -85,7 +85,7 @@
       },
         {
         "tag:":"mouse",
-        "patterns:"Mouse.",
+        "patterns":"Mouse.",
           "responses": 
           "Wired or wireless?"
         ,
@@ -94,7 +94,7 @@
       },
         {
         "tag:":"mouse",
-        "patterns:"Mouse.",
+        "patterns":"Mouse.",
           "responses": 
           "Wired or wireless?"
         ,
@@ -103,7 +103,7 @@
       },
         {
         "tag:":"wired mouse",
-        "patterns:"Wired Mouse.",
+        "patterns":"Wired Mouse.",
           "responses": 
           "A wired mouse is a pointing device that communicates with a computer through a direct connection using a cable. This cable is usually connected to a USB port or, less commonly, a PS/2 port on the computer."
         ,
@@ -112,7 +112,7 @@
       },
         {
         "tag:":"wireless mouse",
-        "patterns:"Wireless Mouse.",
+        "patterns":"Wireless Mouse.",
           "responses": 
           "A wireless mouse operates by transmitting signals to a computer through radio frequency (RF) or Bluetooth technology. This eliminates the need for a physical connection, providing greater freedom of movement and reducing cable clutter on the desk."
         ,
@@ -121,7 +121,7 @@
       },
            {
         "tag:":"good",
-        "patterns:"I'm good!",
+        "patterns":"I'm good!",
           "responses": 
           "Great to hear that!"
         ,
@@ -130,7 +130,7 @@
       },
          {
         "tag:":"monitor",
-        "patterns:"Monitor.",
+        "patterns":"Monitor.",
           "responses": 
           "We sell flat-paneled monitors and curved monitors."
         ,
@@ -139,7 +139,7 @@
       },
          {
         "tag:":"flat-paneled monitors",
-        "patterns:"Flat-paneled monitors.",
+        "patterns":"Flat-paneled monitors.",
           "responses": 
           "Flat-panel monitors are a type of computer display that features a slim, flat profile, in contrast to older CRT (cathode ray tube) monitors, which were bulkier and curved. Flat-panel monitors have become the standard due to their sleek design, energy efficiency, and improved image quality. Here’s a comprehensive overview of flat-panel monitors, including their types, features, advantages, and disadvantages:"
         ,
@@ -148,7 +148,7 @@
       },
          {
         "tag:":"curved monitors",
-        "patterns:"Curved monitors.",
+        "patterns":"Curved monitors.",
           "responses": 
           "Designed to enhance immersion and reduce distortion by curving the screen to match the natural curve of the human eye. Often used in gaming and professional settings." ,
         "context_set": "choose_monitor",
@@ -156,7 +156,7 @@
       },
          {
         "tag:":"thanks",
-        "patterns:"Thanks",
+        "patterns":"Thanks",
           "responses": 
           "No Problem",
              "context_set": "end",
