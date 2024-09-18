@@ -99,12 +99,11 @@ except:
     docs_y = []
 
     for intent in data["intents"]:
-            for pattern in intent["patterns"]:
-                wrds = nltk.word_tokenize(pattern)
-                words.extend(wrds)
-                docs_x.append(wrds)
-                docs_y.append(intent["tag"])
-                
+            wrds = nltk.word_tokenize( intent["patterns"])
+            words.extend(wrds)
+            docs_x.append(wrds)
+            docs_y.append(intent["tag"])
+            
             if intent["tag"] not in labels:
                 labels.append(intent["tag"])
                 
@@ -183,7 +182,7 @@ def bag_of_words(s, words):
 #         tag = labels[result_index]
 #         if result[result_index] > 0.7:
 #             for tg in data["intents"]:
-#                 if tg['tag'] == tag:
+#                 if tg['tag'] == tag
 #                     responses = tg['responses']
 #             print("Bot:",random.choice(responses))
 
@@ -193,7 +192,8 @@ def bag_of_words(s, words):
 def get_choices(context=""):
     choices = []
     for intent in data["intents"]:
-        choices.append(intent['patterns'][0])
+        if context == intent["context_filter"]:     
+            choices.append(intent['patterns'])
     return choices
 
 def generate_response(user_input, context):
@@ -208,25 +208,25 @@ def generate_response(user_input, context):
                 #     print(context in tg['context_filter'])
                 # print(context)
                 # print(tag)
-                if tg['tag'] == tag and (context=="" or(  "context_filter" in tg  and context in tg['context_filter'])):
+                if tg['tag'] == tag and (context=="" or context=="others" or(  "context_filter" in tg  and context == tg['context_filter'])) :
 
                     index = -1
                     responses = tg['responses']
                     # print(responses)
                     if "context_set" in tg:
-                        index = random.randrange(0, len(responses))
-                        if 'context_set' in tg:
-                            context = tg['context_set'][index]
+                        # index = random.randrange(0, len(responses))
+                        # if 'context_set' in tg:
+                        context = tg['context_set']
                             # if context == "end":
                             #     context = "" 
-                    else:
-                        index = tg['context_filter'].index(context)
+                    # else:
+                    #     index = tg['context_filter'].index(context)
                     
 
                     responseFound = True
                 
             if responseFound:
-                return  json.dumps({"res":responses[index], "context":context})
+                return  json.dumps({"res":responses, "context":context})
             else:
                 return  json.dumps({"res":"I didnt get that. Can you explain or try again.","context":context})
         else:
@@ -249,7 +249,7 @@ def recommend( ram, storage, max_price):
     computers = csv_to_dict("Cleaned_Laptop_data.csv")
 
     # Encoding specifications as numerical values
-    processor_map = {'Intel i5': 1, 'Intel i7': 2, 'Intel i9': 3, 'AMD Ryzen 5': 1.5}
+    # processor_map = {'Intel i5': 1, 'Intel i7': 2, 'Intel i9': 3, 'AMD Ryzen 5': 1.5}
     # gpu_map = {'Intel UHD': 1, 'NVIDIA GTX 1650': 2, 'AMD Radeon Vega 8': 1.5, 'NVIDIA RTX 3070': 3}
 
     # Prepare the training data (features)

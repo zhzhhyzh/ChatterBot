@@ -190,6 +190,142 @@
       "responses": "Express shipping is a faster delivery option. Your order will arrive within 1-2 business days.",
       "context_set": "end",
       "context_filter": "delivery_method"
+    },
+    {
+      "tag": "warranty",
+      "patterns": "Do your products come with a warranty?",
+
+      "responses": "Yes, all our products come with 1 year warranty.",
+      "context_set": "warranty",
+      "context_filter": ""
+    },
+    {
+      "tag": "claim_warranty",
+      "patterns": "How do I claim my warranty?",
+      "responses": "To claim your warranty, please contact customer service with your order details and we’ll assist you.",
+      "context_set": "end",
+      "context_filter": "warranty"
+    },
+    {
+      "tag": "warranty_period",
+      "patterns": "What is the warranty period?",
+      "responses": "Our warranty period is 1 year from the date of purchase.",
+      "context_set": "end",
+      "context_filter": "warranty"
+    },
+    {
+      "tag": "thank_you",
+      "patterns": "Thanks for the info.",
+      "responses": "You are welcome!",
+      "context_set": "end",
+      "context_filter": "warranty"
+    },
+    {
+      "tag": "membership",
+      "patterns": "What are the membership tiers?",
+      "responses": "We have three membership tiers: Silver, Gold, and Platinum. Please tell me your current membership tier.",
+      "context_set": "membership",
+      "context_filter": ""
+    },
+    {
+      "tag": "silver",
+      "patterns": "Silver",
+      "responses": "As a Silver member, you receive a 5% discount. You need to spend RM 500 more to reach the Gold tier.",
+      "context_set": "end",
+      "context_filter": "membership"
+    },
+    {
+      "tag": "gold",
+      "patterns": "Gold",
+      "responses": "As a Gold member, you receive a 15% discount. You need to spend RM 1000 more to reach the Platinum tier.",
+      "context_set": "end",
+      "context_filter": "membership"
+    },
+    {
+      "tag": "platinum",
+      "patterns": "Platinum",
+      "responses": "As a Platinum member, you receive a 20% discount and free express shipping. Congratulations, you’ve reached the highest tier!",
+      "context_set": "end",
+      "context_filter": "membership"
+    },
+    {
+      "tag": "return_refund",
+      "patterns": "What is your return policy?",
+      "responses": "You can return items within 14 days of purchase. Returns can be made for both unpacked and unpacked items. Which type of items are you talking about:",
+      "context_set": "return_refund",
+      "context_filter": ""
+    },
+    {
+      "tag": "return_packed",
+      "patterns": "I want to return an packed item.",
+      "responses": "For packed items, you can return them within 14 days for a full refund. Please ensure the item is in its original packaging.",
+      "context_set": "end",
+      "context_filter": "return_refund"
+    },
+    {
+      "tag": "return_unpacked",
+      "patterns": "I want to return an unpacked item.",
+      "responses": "For unpacked items, you can return them within 14 days. The refund amount may be adjusted based on the condition of the item. Please use our return form and follow the instructions.",
+      "context_set": "end",
+      "context_filter": "return_refund"
+    },
+    {
+      "tag": "other_questions",
+      "patterns": "I have other questions.",
+      "responses": "Here are some more questions that you might have on your mind.",
+      "context_set": "others",
+      "context_filter": ""
+    },
+    {
+      "tag": "cancellation",
+      "patterns": "How do I cancel my order?",
+
+      "responses": "You can cancel your order before it is shipped by visiting your account page or contacting our customer service. Once the order is shipped, it cannot be canceled.",
+      "context_set": "end",
+      "context_filter": "others"
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": "What payment methods do you accept?",
+      "responses": "We accept various payment methods, including credit/debit cards, PayPal, and mobile payments like Apple Pay and Google Pay.",
+
+      "context_set": "end",
+      "context_filter": "others"
+    },
+    {
+      "tag": "installment_payment",
+      "patterns": "Do you offer installment payment options?",
+      "responses": "Yes, we offer 12-months or 24-months installment payment options through our partners. You can select this option during checkout.",
+      "context_set": "end",
+      "context_filter": "others"
+    },
+    {
+      "tag": "delivery_issue",
+      "patterns": "I'm encountering a delivery issue.",
+      "responses": "In case of a delivery issue, our support team is here to help resolve it quickly, what kind of issue did you encounter?",
+      "context_set": "delivery_issue",
+      "context_filter": "others"
+    },
+    {
+      "tag": "order_hasnt_arrived",
+      "patterns": "Why hasn't my order arrived?",
+      "responses": "We're sorry for the delay. You can track your order through your account or contact our support team for assistance.",
+      "context_set": "end",
+      "context_filter": "delivery_issue"
+    },
+    {
+      "tag": "wrong_product",
+      "patterns": "I received the wrong product, how can I resolve this?",
+      "responses": "If your order arrives damaged or incorrect, please contact customer service immediately and we’ll arrange a replacement or refund.",
+      "context_set": "end",
+      "context_filter": "delivery_issue"
+    },
+    {
+      "tag": "track+order",
+      "patterns": "How do I track my order?",
+        "responses": "Once your order is shipped, you’ll receive a tracking link via email or text. You can use that link to track your delivery in real-time.",
+        "context_set": "end",
+        "context_filter": "delivery_issue"
     }
   ]
 }

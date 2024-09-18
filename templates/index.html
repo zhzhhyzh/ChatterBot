@@ -389,10 +389,11 @@
 
       function botResponse(rawText) {
         if (context === "recommend"&&rawText.includes("RAM(GB):")&&rawText.includes("Storage(GB):")&&rawText.includes("Max Price(RM):")) {
-          let ram = rawText.split("RAM(GB):")[1];
-          let storage = rawText.split("Storage(GB):")[1];
-          let maxPrice = rawText.split("Max Price(RM):")[1];
-          getRecommendations(ram, storage, maxPrice);
+          rawText = rawText.trim()
+          let ram =  rawText.split('RAM(GB):').pop().split('Storage(GB):')[0];
+          let storage = rawText.split('Storage(GB):').pop().split('Max Price(RM):')[0];
+          let maxPrice = rawText.split('Max Price(RM):')[1];
+          getRecommendations(ram, storage, maxPrice );
         } else {
           // Bot Response
           $.get("/generate_response", { msg: rawText, context }).done(function (
@@ -407,6 +408,8 @@
             if (context === "end") {
               newQuestion();
               context=""
+            }else{
+              getChoices(context)
             }
           });
         }
@@ -492,9 +495,9 @@ getChoices();
 
       function getRecommendations(ram, storage, max_price) {
         $.get("/get_recommendations", {
-          ram: 32,
-          storage: 32,
-          max_price: 1000,
+          ram,
+          storage,
+          max_price,
         }).then((data) => {
           if (Array.isArray(data)) {
             let msg = "Here are some recommendations:";
