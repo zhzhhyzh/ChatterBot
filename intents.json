@@ -10,7 +10,7 @@
     {
       "tag": "accessories",
       "patterns": "Can you help me with accessories? ",
-      "responses": "Absolutely! I'd be delighted to assist you with finding the right computer accessories. We have a wide range of options. To make sure I recommend the best products for you, could you let me know which type of accessory you’re interested in?",
+      "responses": "Absolutely! I'd be delighted to assist you with finding the right computer accessories. We have a wide range of options. To make sure I recommend the best products for you, could you let me know which type of accessory you're interested in?",
       "context_set": "explain_accessories",
       "context_filter": ""
     },
@@ -52,13 +52,6 @@
       "context_filter": "choose_keyboards"
     },
     {
-      "tag": "gaming_keyboard",
-      "patterns": "Gaming keyboard.",
-      "responses": "Equipped with features like programmable keys, backlighting, and customizable macros, these are perfect for gamers. ",
-      "context_set": "choose_keyboards",
-      "context_filter": "choose_keyboards"
-    },
-    {
       "tag": "good",
       "patterns": "I'm good!",
       "responses": "Great to hear that!",
@@ -71,13 +64,6 @@
       "responses": "Wired or wireless?",
       "context_set": "choose_mouse",
       "context_filter": "explain_accessories"
-    },
-    {
-      "tag": "mouse",
-      "patterns": "Mouse.",
-      "responses": "Wired or wireless?",
-      "context_set": "explain_accessories",
-      "context_filter": "choose_mouse"
     },
     {
       "tag": "wired mouse",
@@ -202,7 +188,7 @@
     {
       "tag": "claim_warranty",
       "patterns": "How do I claim my warranty?",
-      "responses": "To claim your warranty, please contact customer service with your order details and we’ll assist you.",
+      "responses": "To claim your warranty, please contact customer service with your order details and we will assist you.",
       "context_set": "end",
       "context_filter": "warranty"
     },
@@ -244,7 +230,7 @@
     {
       "tag": "platinum",
       "patterns": "Platinum",
-      "responses": "As a Platinum member, you receive a 20% discount and free express shipping. Congratulations, you’ve reached the highest tier!",
+      "responses": "As a Platinum member, you receive a 20% discount and free express shipping. Congratulations, you have reached the highest tier!",
       "context_set": "end",
       "context_filter": "membership"
     },
@@ -316,14 +302,14 @@
     {
       "tag": "wrong_product",
       "patterns": "I received the wrong product, how can I resolve this?",
-      "responses": "If your order arrives damaged or incorrect, please contact customer service immediately and we’ll arrange a replacement or refund.",
+      "responses": "If your order arrives damaged or incorrect, please contact customer service immediately and we will arrange a replacement or refund.",
       "context_set": "end",
       "context_filter": "delivery_issue"
     },
     {
       "tag": "track+order",
       "patterns": "How do I track my order?",
-        "responses": "Once your order is shipped, you’ll receive a tracking link via email or text. You can use that link to track your delivery in real-time.",
+        "responses": "Once your order is shipped, you will receive a tracking link via email or text. You can use that link to track your delivery in real-time.",
         "context_set": "end",
         "context_filter": "delivery_issue"
     }
