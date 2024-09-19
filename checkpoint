@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\quint\\vscode\\My Projects\\computer-chatbot\\model.tflearn"
-all_model_checkpoint_paths: "C:\\Users\\quint\\vscode\\My Projects\\computer-chatbot\\model.tflearn"
+model_checkpoint_path: "E:\\Code\\computer-chatbot\\model.tflearn"
+all_model_checkpoint_paths: "E:\\Code\\computer-chatbot\\model.tflearn"
